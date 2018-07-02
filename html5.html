@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Html 5 Compatibilidade</title>
+        <link href="style.css" rel="stylesheet"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!-- "serch" - Campo do tipo pesquisa que adiciona um "x" para zerar o que 
+        foi digitado-->
+        Search: <input type="search" name="search" />
+
+        <!--"email" campo do tipo e-mail que só nos deixa inserir e-mail válidos-->
+        <!--"url" só deixa colocar url válidas-->
+        <!--"tel" em SmartPhones o campo tel já puxa o teclado número-->
+        <!--"number" adiciona setas para aumentar e diminuir o número-->
+        <!--"range" Adiciona um range slider que vc define-->
+        <!--"date" Muito irado já puxa um calendário-->
+        <form method="POST">
+            Number: <input type="number" name="number"><br>
+            Tel: <input type="tel" name="tel"><br> 
+            Url: <input type="url" name="url"><br>
+            E-mail: <input type="email" name="e-mail" required><br>
+            Range: <input type="range" min="1" max="100" required><br>
+            Data: <input type="date" required><br>
+            Data e Hora: <input type="datetime-local"><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
