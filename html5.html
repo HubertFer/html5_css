@@ -5,9 +5,15 @@
         <meta charset="UTF-8">
     </head>
     <body>
+        <video width="848" height="480" controls autoplay>
+            <source src="Instrumental01.mp4" type="video/mp4">
+        </video><br>
+        <audio controls>
+            <source src="Wherever Intro.mp3" type="audio/mpeg">
+        </audio><br>
         <!-- "serch" - Campo do tipo pesquisa que adiciona um "x" para zerar o que 
         foi digitado-->
-        Search: <input type="search" name="search" />
+        <input type="search" name="search"  autofocus placeholder="Search..."/>
 
         <!--"email" campo do tipo e-mail que só nos deixa inserir e-mail válidos-->
         <!--"url" só deixa colocar url válidas-->
@@ -16,14 +22,19 @@
         <!--"range" Adiciona um range slider que vc define-->
         <!--"date" Muito irado já puxa um calendário-->
         <form method="POST">
-            Number: <input type="number" name="number"><br>
-            Tel: <input type="tel" name="tel"><br> 
-            Url: <input type="url" name="url"><br>
-            E-mail: <input type="email" name="e-mail" required><br>
+            <input type="number" name="number" placeholder="Number"><br>
+            <input type="tel" name="tel" placeholder="Tel"><br> 
+            <input type="url" name="url" placeholder="URL"><br>
+            <input type="email" name="e-mail" required placeholder="E-mail"><br>
             Range: <input type="range" min="1" max="100" required><br>
-            Data: <input type="date" required><br>
-            Data e Hora: <input type="datetime-local"><br>
+            Date:<input type="date"  id="date"><br>
+            Time and Date: <input type="datetime-local"><br>
             <input type="submit" value="Enviar">
         </form>
+        <script>
+            var data = date.value
+            document.write(data)
+        </script>
+        <!--Tag Video mostra um vídeo na tela-->
     </body>
 </html>
